@@ -39,7 +39,7 @@ export default function Details() {
           className="bg-[#B60418] text-white h-[40px] max-w-[100px] flex items-center justify-center md:w-[100px] gap-2"
           style={{ minHeight: "50px", lineHeight: "40px", minWidth: "100px" }}
         >
-          <Link to= "/user">Next </Link>
+          <Link to= "/dashboard">Next </Link>
           <FaArrowRight />
         </button>
         <p className="pt-5">

@@ -5,6 +5,8 @@ import imageOne from "../images/userone.png";
 import imageTwo from "../images/userthree.png";
 import imageThree from "../images/four.png";
 import {  FaAngleRight } from "react-icons/fa";
+import { Link } from 'react-router-dom'
+
 
 export default function UserHome() {
   const images = [imageOne, Bg, imageTwo, imageThree];
@@ -38,9 +40,9 @@ export default function UserHome() {
             <br /> best Photographers in just one simple Click.
             <br /> Explore Photographers now
           </p>
-          <button className="h-10 w-24 text-white  bg-[#B60418] hover:bg-[#8B0313] transition-all duration-300  ">
+          <Link to={"/gallery"} className="h-10 w-24 text-white  bg-[#B60418] hover:bg-[#8B0313] transition-all duration-300  flex items-center justify-center ">
             Explore
-          </button>
+          </Link>
         </div>
         <FaAngleRight
           className="text-[#B60418] w-10 h-10"

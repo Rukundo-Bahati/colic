@@ -33,7 +33,7 @@ const Calendars = () => (
                     events={myEventList}
                     startAccessor="start"
                     endAccessor="end"
-                    className='bg-[#0a0b0c] text-white p-5 h-full'
+                    className='bg-[#0a0b0c] text-[#fff] p-5 h-full'
                     style={{ height: "calc(100vh - 4rem)" }}  // Dynamic height adjustment
                 />
             </div>

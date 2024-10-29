@@ -18,10 +18,10 @@ const Chatdash = ({users}) => {
          <div className="flex mr-10 gap-5">
         <FaSearch className=" h-[100%] hidden md:block"/>
         <FaBell className=" h-[100%] hidden md:block"/>
-         <div className="flex items-center gap-2">
+         <Link to={"/profile"} className="flex items-center gap-2">
           <img src={user1} alt="user profile" className="w-[50%]"/>
           <FaChevronDown/>
-         </div>
+         </Link >
           </div>   
         </div>
 

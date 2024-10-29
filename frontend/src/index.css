@@ -8,7 +8,7 @@
 
 @layer components{
  .rbc-off-range{
-    @apply text-[#fff]
+    @apply text-[#ff0]
  }
  .rbc-off-range-bg{
     @apply bg-[#B50418]

@@ -1,4 +1,5 @@
 import { FaChevronDown, FaRegBell,  FaSearchengin } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function Dashnav() {
     return (
@@ -12,14 +13,14 @@ export default function Dashnav() {
                     <span className="absolute top-0 right-0 inline-block w-3 h-3 bg-red-500 rounded-full"></span>
                 </FaRegBell>
 
-                <div className="flex items-center space-x-1 cursor-pointer">
+                <Link to={"/profile"} className="flex items-center space-x-1 cursor-pointer">
                     <img
                         src="/user.png"
                         alt="profile picture"
                         className="w-10 h-10 rounded-full object-cover"
                     />
                     <FaChevronDown className="text-[10px]" />
-                </div>
+                </Link>
             </div>
         </div>
     );

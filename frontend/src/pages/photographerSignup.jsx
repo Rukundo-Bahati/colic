@@ -41,7 +41,7 @@ export default function SignUpPhotographer() {
             className="bg-[#B60418] text-white h-[40px] max-w-[350px] md:w-[350px] "
             style={{ minHeight: "50px", lineHeight: "40px",minWidth:"100px" }}
           >
-         <Link to="/choice" >Sign up</Link>
+         <Link to={"/choice"} >Sign up</Link>
           </button>
           <p>New to Copic ? Sign up now</p>
 

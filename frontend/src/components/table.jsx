@@ -1,4 +1,5 @@
 import { Card, Typography } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
 const TABLE_HEAD = ["Full names", "Role", "Date", "Status"];
 
@@ -42,9 +43,9 @@ export function ProgressTable() {
         <Typography variant="h6" color="white">
           Track your Progress
         </Typography>
-        <button className="bg-[#850506] flex items-center justify-center text-white py-2 px-4 h-[36px] w-[148px] rounded-[10px]">
+        <Link to={"/progress"} className="bg-[#850506] flex items-center justify-center text-white py-2 px-4 h-[36px] w-[148px] rounded-[10px]">
           See all
-        </button>
+        </Link >
       </div>
       <table className="w-full min-w-max table-auto text-left">
         <thead>

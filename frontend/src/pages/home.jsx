@@ -3,6 +3,7 @@ import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 import imageOne from "../images/bg.png";
 import vector from "../images/vector.png";
+import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div>
@@ -23,9 +24,9 @@ const Home = () => {
             <br /> see new perspectives,
             <br /> allow self-expression & unites us together.
           </h1>
-          <button className="h-10 w-24 text-white bg-[#B60418] hover:bg-[#8B0313] transition-all duration-300  ">
+          <Link to={"/sign"} className="h-10 w-24 text-white bg-[#B60418] hover:bg-[#8B0313] transition-all duration-300 flex justify-center items-center ">
             Sign Up
-          </button>
+          </Link >
           <img src={vector} alt="" className="w-18 h-12 pb-2" />
         </div>
       </div>
@@ -66,12 +67,12 @@ const Home = () => {
           <h2 className="text-[40px] font-semibold text-center">
             Connect Now !
           </h2>
-          <button
+          <Link to={"/sign"}
             className="bg-[#B60418] text-white h-[50px] w-[100px] md:mx-[200px] flex items-center justify-center"
             style={{ minHeight: "50px", lineHeight: "50px",minWidth:"100px" }}
           >
             Sign Up
-          </button>
+          </Link>
         </div>
         <div className="gap-10 flex flex-1 flex-col ">
           <Cards/>
